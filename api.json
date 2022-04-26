@@ -1,0 +1,20 @@
+{
+	"data": [
+		{ "id": 5, "name": "Sauna", "temperature": 11.181 },
+		{ "id": 9, "name": "Nursery", "temperature": 26.677 },
+		{ "id": 18, "name": "Balcony", "temperature": 32.616 },
+		{ "id": 0, "name": "Living room", "temperature": 20.137 },
+		{ "id": 11, "name": "Dining room", "temperature": 24.069 },
+		{ "id": 23, "name": "Porch", "temperature": 35.369 },
+		{ "id": 13, "name": "Mud room", "temperature": 13.023 },
+		{ "id": 26, "name": "Tree house", "temperature": 16.326 },
+		{ "id": 12, "name": "Garage", "temperature": 36.441 },
+		{ "id": 14, "name": "Games room", "temperature": 33.142 },
+		{ "id": 17, "name": "Wardrobe", "temperature": 37.572 },
+		{ "id": 19, "name": "Conservatory", "temperature": 21.474 },
+		{ "id": 6, "name": "Spare room", "temperature": 14.273 },
+		{ "id": 1, "name": "Bedroom", "temperature": 13.316 },
+		{ "id": 10, "name": "Utility room", "temperature": 34.908 }
+	],
+	"new": true
+}

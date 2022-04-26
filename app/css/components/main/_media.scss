@@ -1,0 +1,152 @@
+@media (max-width: 1200px) {
+	.nav-logo {
+		display: none;
+	}
+}
+
+@media (max-width: 1000px) {
+	.nav {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.nav-list {
+		align-items: flex-start;
+		margin-top: 10px;
+	}
+	.navigation {
+		position: absolute;
+		top: 13%;
+		right: 2%;
+		z-index: 5000;
+	}
+	.footer-rows {
+		flex-wrap: wrap;
+	}
+	.wrapper-content {
+		max-width: 740px;
+	}
+	.row-info {
+		flex: 0 0 auto;
+		width: 50%;
+		margin-bottom: 20px;
+	}
+	.row-info__desk {
+		max-width: 250px;
+	}
+	.row {
+		flex: 0 0 auto;
+		width: 50%;
+		margin-bottom: 20px;
+	}
+	.row-apps {
+		flex: 0 0 auto;
+		width: 50%;
+		margin-bottom: 20px;
+	}
+	.row-apps-container {
+		align-items: flex-start;
+	}
+}
+
+@media (max-width: 855px) {
+	.section-name__title {
+		font-size: 28px;
+	}
+}
+
+@media (max-width: 767px) {
+	.header__burger {
+		display: block;
+		position: absolute;
+		width: 30px;
+		height: 23px;
+		right: 53px;
+		top: 27px;
+		z-index: 11;
+		transition: 0.3s ease 0s;
+	}
+
+	.burger-line {
+		width: 30px;
+		height: 2px;
+		background: #fff;
+	}
+	.line-second {
+		margin-top: 8px;
+	}
+	.line-third {
+		margin-top: 8px;
+	}
+	.nav-list {
+		display: none;
+	}
+	.navigation {
+		display: none;
+	}
+	.nav-logo {
+		display: block;
+	}
+	.footer-rows {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		align-items: center;
+		padding: 48px 12px 0px 12px;
+	}
+	.row-info {
+		flex: 0 0 auto;
+		margin-bottom: 20px;
+	}
+	.row-info__desk {
+		max-width: 340px;
+	}
+	.row {
+		flex: 0 0 auto;
+		margin-bottom: 20px;
+	}
+	.row-apps {
+		flex: 0 0 auto;
+		margin-bottom: 20px;
+	}
+	.copyright {
+		flex-direction: column;
+		align-items: center;
+		.copyright__copy {
+			margin: 0;
+		}
+		.copyright__poliicy {
+			margin: 0;
+		}
+	}
+}
+
+@media (max-width: 430px) {
+	.section-name__title {
+		font-size: 24px;
+	}
+	.header__burger {
+		right: 26px;
+	}
+	.footer-rows {
+		align-items: flex-start;
+	}
+	.row-info {
+		flex: 0 0 auto;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.row {
+		flex: 0 0 auto;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.row-apps {
+		flex: 0 0 auto;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.copyright {
+		align-items: flex-start;
+	}
+}
