@@ -66,5 +66,12 @@ export function getCurrentDate() {
 	}
 
 	console.log(day + ' ' + fMonth + ' ' + year + ' года');
-	console.log('Текущее время: ' + hour + ':' + minutes + ':' + seconds);
+
+	if (hour < 10) {
+		console.log(`Текущее время: 0${hour}:${minutes}:${seconds}`);
+	} else if (minutes < 10) {
+		console.log(`Текущее время: ${hour}:0${minutes}:${seconds}`);
+	} else if (seconds < 10) {
+		console.log(`Текущее время: ${hour}:${minutes}:0${seconds}`);
+	}
 }

@@ -6,12 +6,13 @@ async function startApp() {
 	const data = await setRequest(UI.API);
 	console.log();
 	createElements(data.data);
-	console.log('create');
 
 	// info in console.log();
+	console.group('App was created.');
 	getCurrentDate();
 	console.log(data.data);
 	sortedData(data.data);
+	console.groupEnd();
 }
 
 startApp();
@@ -23,14 +24,15 @@ setInterval(async function () {
 	if (dataInterval.new) {
 		deleteElements();
 		startApp();
-		console.log('newcreate');
+		console.log('App elements in content was deleted');
 	} else {
 		updateElements(dataInterval.data);
-		console.log('update');
 
 		// info in console.log();
+		console.group('App was updated');
 		getCurrentDate();
 		console.log(dataInterval.data);
 		sortedData(dataInterval.data);
+		console.groupEnd();
 	}
 }, 15000);
