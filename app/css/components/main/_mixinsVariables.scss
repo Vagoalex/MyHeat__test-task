@@ -1,3 +1,8 @@
+// Variables
+$color-text--titles: #fff;
+$color-text--desk: #8e8e93;
+
+// Mixins
 @mixin flex-row {
 	display: flex;
 	flex-direction: row;
@@ -6,4 +11,8 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
+@mixin montserrat-font--bold {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700px;
 }

@@ -2,6 +2,13 @@
 	.nav-logo {
 		display: none;
 	}
+	.content {
+		justify-content: center;
+	}
+
+	.content-item {
+		margin: 1.5em 2em;
+	}
 }
 
 @media (max-width: 1000px) {
@@ -13,6 +20,12 @@
 	.nav-list {
 		align-items: flex-start;
 		margin-top: 10px;
+	}
+	.nav-list__item--svg {
+		margin-top: -7px;
+	}
+	.header__bottom {
+		padding: 158px 20px 10px 20px;
 	}
 	.navigation {
 		position: absolute;
@@ -30,10 +43,12 @@
 		flex: 0 0 auto;
 		width: 50%;
 		margin-bottom: 20px;
+
+		.row-info__desk {
+			max-width: 250px;
+		}
 	}
-	.row-info__desk {
-		max-width: 250px;
-	}
+
 	.row {
 		flex: 0 0 auto;
 		width: 50%;
@@ -50,8 +65,10 @@
 }
 
 @media (max-width: 855px) {
-	.section-name__title {
-		font-size: 28px;
+	.section-name {
+		.section-name__title {
+			font-size: 28px;
+		}
 	}
 }
 
@@ -70,7 +87,7 @@
 	.burger-line {
 		width: 30px;
 		height: 2px;
-		background: #fff;
+		background: $color-text--titles;
 	}
 	.line-second {
 		margin-top: 8px;
@@ -97,9 +114,9 @@
 	.row-info {
 		flex: 0 0 auto;
 		margin-bottom: 20px;
-	}
-	.row-info__desk {
-		max-width: 340px;
+		.row-info__desk {
+			max-width: 340px;
+		}
 	}
 	.row {
 		flex: 0 0 auto;
@@ -119,6 +136,45 @@
 			margin: 0;
 		}
 	}
+	.nav-list-first {
+		position: absolute;
+		top: -500px;
+		left: 50%;
+		transition: all 0.5s;
+		z-index: 10000;
+	}
+	.nav-list-second {
+		position: absolute;
+		top: -1000px;
+		left: 50%;
+		transition: all 0.5s;
+		z-index: 10000;
+	}
+	.first--active {
+		top: 50px;
+	}
+	.second--active {
+		top: 100px;
+	}
+}
+
+@media (max-width: 700px) {
+	.gauge {
+		max-width: 350px;
+		width: 350px;
+	}
+	.content-item .content-item__title {
+		color: #fff;
+		margin: 30px 0px 30px 10px;
+		font-size: 28px;
+	}
+}
+
+@media (max-width: 570px) {
+	.gauge {
+		max-width: 300px;
+		width: 300px;
+	}
 }
 
 @media (max-width: 430px) {
@@ -128,6 +184,21 @@
 	.header__burger {
 		right: 26px;
 	}
+
+	.app__content {
+		padding: 30px 0px;
+	}
+	.gauge {
+		max-width: 250px;
+		width: 250px;
+	}
+
+	.content-item .content-item__title {
+		color: #fff;
+		margin: 10px 0px 20px 10px;
+		font-size: 24px;
+	}
+
 	.footer-rows {
 		align-items: flex-start;
 	}
@@ -146,6 +217,7 @@
 		width: 100%;
 		margin-bottom: 20px;
 	}
+
 	.copyright {
 		align-items: flex-start;
 	}
